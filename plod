@@ -58,7 +58,7 @@ use POSIX qw(strftime);
 #
 my ($mm, $hh, $DD, $MM, $YYYY) = split(/,/,strftime("%M, %H, %d, %m, %Y",localtime())); 
 
-my $KEYVAL = sprintf("pl%d%dod", $YYYY, $MM);
+my $KEYVAL = sprintf("pl.%04d-%02d.od", $YYYY, $MM);
 my $PROMPT = 0;
 my $CRYPTCMD = "/usr/bin/crypt";
 my $TMPFILE = "/tmp/plodtmp$$";
